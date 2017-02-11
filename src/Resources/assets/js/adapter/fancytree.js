@@ -298,6 +298,7 @@ export class FancytreeAdapter {
         this.$tree.fancytree('option', 'activate', (event, data) => {
             if (!this.boundToInput) {
                 data.node.setActive(false);
+                data.node.setFocus(false);
             }
         });
     }
